@@ -224,13 +224,13 @@
 #define PNG_USER_HEIGHT_MAX 1000000
 #define PNG_USER_WIDTH_MAX 1000000
 #define PNG_ZBUF_SIZE 8192
-#define PNG_ZLIB_VERNUM 0
+#define PNG_ZLIB_VERNUM 0 /* unknown */
 #define PNG_Z_DEFAULT_COMPRESSION (-1)
 #define PNG_Z_DEFAULT_NOFILTER_STRATEGY 0
 #define PNG_Z_DEFAULT_STRATEGY 1
 #define PNG_sCAL_PRECISION 5
 #define PNG_sRGB_PROFILE_CHECKS 2
-/* end of settings */
+
 #define png_access_version_number wx_png_access_version_number
 #define png_benign_error wx_png_benign_error
 #define png_build_grayscale_palette wx_png_build_grayscale_palette
@@ -263,9 +263,6 @@
 #define png_get_cHRM_XYZ wx_png_get_cHRM_XYZ
 #define png_get_cHRM_XYZ_fixed wx_png_get_cHRM_XYZ_fixed
 #define png_get_cHRM_fixed wx_png_get_cHRM_fixed
-#define png_get_cICP wx_png_get_cICP
-#define png_get_cLLI wx_png_get_cLLI
-#define png_get_cLLI_fixed wx_png_get_cLLI_fixed
 #define png_get_channels wx_png_get_channels
 #define png_get_chunk_cache_max wx_png_get_chunk_cache_max
 #define png_get_chunk_malloc_max wx_png_get_chunk_malloc_max
@@ -293,8 +290,6 @@
 #define png_get_io_ptr wx_png_get_io_ptr
 #define png_get_io_state wx_png_get_io_state
 #define png_get_libpng_ver wx_png_get_libpng_ver
-#define png_get_mDCV wx_png_get_mDCV
-#define png_get_mDCV_fixed wx_png_get_mDCV_fixed
 #define png_get_mem_ptr wx_png_get_mem_ptr
 #define png_get_oFFs wx_png_get_oFFs
 #define png_get_pCAL wx_png_get_pCAL
@@ -385,9 +380,6 @@
 #define png_set_cHRM_XYZ wx_png_set_cHRM_XYZ
 #define png_set_cHRM_XYZ_fixed wx_png_set_cHRM_XYZ_fixed
 #define png_set_cHRM_fixed wx_png_set_cHRM_fixed
-#define png_set_cICP wx_png_set_cICP
-#define png_set_cLLI wx_png_set_cLLI
-#define png_set_cLLI_fixed wx_png_set_cLLI_fixed
 #define png_set_check_for_invalid_index wx_png_set_check_for_invalid_index
 #define png_set_chunk_cache_max wx_png_set_chunk_cache_max
 #define png_set_chunk_malloc_max wx_png_set_chunk_malloc_max
@@ -422,8 +414,6 @@
 #define png_set_invert_mono wx_png_set_invert_mono
 #define png_set_keep_unknown_chunks wx_png_set_keep_unknown_chunks
 #define png_set_longjmp_fn wx_png_set_longjmp_fn
-#define png_set_mDCV wx_png_set_mDCV
-#define png_set_mDCV_fixed wx_png_set_mDCV_fixed
 #define png_set_mem_fn wx_png_set_mem_fn
 #define png_set_oFFs wx_png_set_oFFs
 #define png_set_option wx_png_set_option
@@ -490,4 +480,5 @@
 #define wx_png_get_uint_32(buf) PNG_get_uint_32(buf)
 #define wx_png_get_uint_16(buf) PNG_get_uint_16(buf)
 #define wx_png_get_int_32(buf) PNG_get_int_32(buf)
+/* end of settings */
 #endif /* PNGLCONF_H */
